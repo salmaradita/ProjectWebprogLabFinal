@@ -42,7 +42,7 @@ Route::group(['middleware' => 'auth'], function () {
     //Update profile
     Route::get('/profile/edit-profile', [UpdateController::class, 'edit'])->name('auth.edit');
     Route::put('/profile/update-profile', [UpdateController::class, 'update'])->name('auth.update');
-    Route::get('/profile/edit-pw', [PwController::class, 'edit'])->name('auth.pw');
+  Route::get('/profile/edit-pw', [PwController::class, 'edit'])->name('auth.edit');
     Route::put('/profile/update-pw', [PwController::class, 'update'])->name('auth.password');
 });
 
