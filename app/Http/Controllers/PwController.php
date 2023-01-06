@@ -15,7 +15,9 @@ class PwController extends Controller
             'password' => ['required', 'string', 'min:5']
         ]);
 
-        $auth = Auth::user();
+        User::whereId(auth()->user()->id)->update([
+            'password' => Hash::make($request->password)
+        ]);
 
         return view('/profile');
     }
