@@ -1,0 +1,7 @@
+Disini kita menggunakan Laravel 8 dengan beberapa tambahan composer yang harus di jalankan
+Composer List:
+-Composer Install
+-php artisan key:generate
+-php artisan storage:link
+
+Untuk admin merubahnya lewat phplocalhost dari member di ubah ke admin baru dari situ bisa di akses admin nya :D makasih.
